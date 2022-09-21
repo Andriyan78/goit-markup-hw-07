@@ -5,11 +5,11 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-}
-.features .features__item{
+
+.features &__item{
     width: 270px;
 }
-.features__icon{
+&__icon{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -17,4 +17,5 @@
     height: 120px;    
     background-color: var(--filter-color);
     margin-bottom: var(--card-set-gap);
+}
 }
