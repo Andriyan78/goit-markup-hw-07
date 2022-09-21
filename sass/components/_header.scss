@@ -5,10 +5,10 @@
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;  
-    &__accent{
+&__accent{
     color: var(--h-color)
 }
-    &__accent--foot{
+&__accent--foot{
     color: var(--btnlet-color);
 }
 }
@@ -21,7 +21,6 @@
     padding-bottom: 24px;
     
 }
-
 .nav{
     margin-left: 93px;
 }
@@ -33,9 +32,10 @@
     color: var(--h-color);
     display: flex;
     align-items: center; 
-    &.link.current{
+&.link.current{
     color: var(--btnbg-color);
-}   
+} 
+
 }
 .cont{
     margin-left: 70px;
@@ -92,5 +92,9 @@
     height: 5px;
     background-color: var(--btnbg-color);    
     opacity:1;    
+}
+&:hover,
+&:focus {
+    color: var(--btnbg-color);
 }
 }

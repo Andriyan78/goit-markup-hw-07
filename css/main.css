@@ -111,9 +111,7 @@ textarea {
 .features__title,
 .hero__title,
 .title__features--foot,
-.team__title,
 .subscription__head,
-.do__title,
 .product__title {
   text-transform: uppercase;
 }
@@ -248,6 +246,9 @@ textarea {
   height: 5px;
   background-color: var(--btnbg-color);
   opacity: 1;
+}
+.nav-link:hover, .nav-link:focus {
+  color: var(--btnbg-color);
 }
 
 /* Секція героя - шапка */
@@ -676,13 +677,19 @@ textarea {
   cursor: pointer;
 }
 
-.customer {
+.custom {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+.custom__icon:hover, .custom__icon:focus:focus {
+  border: 1px solid var(--btnbg-color);
+}
+.custom__icon:hover, .custom__icon:focus {
+  fill: var(--btnbg-color);
 }
 
 .custom__item {
@@ -718,16 +725,6 @@ textarea {
   transition: fill var(--timing-function), border-color var(--timing-function);
 }
 
-.custom__icon:hover,
-.custom__icon:focus:focus {
-  border: 1px solid var(--btnbg-color);
-}
-
-.custom__icon:hover,
-.custom__icon:focus {
-  fill: var(--btnbg-color);
-}
-
 .foot {
   background-color: var(--footbcg-color);
   padding-top: 60px;
@@ -746,15 +743,9 @@ textarea {
 .address {
   max-width: 231px;
 }
-
-.adr {
-  margin-right: 70px;
-}
-
 .address__foot {
   margin-top: 20px;
 }
-
 .address__item--cityadr {
   width: 231px;
   font-style: normal;
@@ -765,9 +756,7 @@ textarea {
   -webkit-transition: color var(--timing-function);
   transition: color var(--timing-function);
 }
-
-.address__item--contactmail,
-.address__item--contacttel {
+.address__item--contactmail, .address__item--contacttel {
   font-style: normal;
   font-size: 14px;
   line-height: 1.7;
@@ -776,25 +765,21 @@ textarea {
   -webkit-transition: color var(--timing-function);
   transition: color var(--timing-function);
 }
-
-.address__item--mail,
-.adress__item--cityadr {
+.address__item--mail, .address__item--cityadr {
   margin-bottom: 10px;
 }
-
-.address__item--cityadr:hover,
-.address__item--cityadr:focus {
+.address__item--cityadr:hover, .address__item--cityadr:focus {
+  color: var(--btnbg-color);
+}
+.address__item--contactmail:hover, .address__item--contactmail:focus {
+  color: var(--btnbg-color);
+}
+.address__item--contacttel:hover, .address__item--contacttel:focus {
   color: var(--btnbg-color);
 }
 
-.address__item--contactmail:hover,
-.address__item--contactmail:focus {
-  color: var(--btnbg-color);
-}
-
-.address__item--contacttel:hover,
-.address__item--contacttel:focus {
-  color: var(--btnbg-color);
+.adr {
+  margin-right: 70px;
 }
 
 .footmedia,
@@ -866,11 +851,9 @@ textarea {
       -ms-flex-align: center;
           align-items: center;
 }
-
 .subscription__label {
   margin-right: 12px;
 }
-
 .subscription__input {
   display: block;
   width: 358px;
@@ -885,7 +868,6 @@ textarea {
   border-radius: 4px;
   outline: none;
 }
-
 .subscription__button {
   display: -webkit-box;
   display: -ms-flexbox;
